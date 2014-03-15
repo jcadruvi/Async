@@ -1,6 +1,3 @@
-C:\github\Async\Async.Site\bin\Mvc4.dll.config
-C:\github\Async\Async.Site\bin\Mvc4.dll
-C:\github\Async\Async.Site\bin\Mvc4.pdb
 C:\github\Async\Async.Site\bin\Antlr3.Runtime.dll
 C:\github\Async\Async.Site\bin\BundleTransformer.Core.dll
 C:\github\Async\Async.Site\bin\Microsoft.Web.Infrastructure.dll
@@ -28,5 +25,8 @@ C:\github\Async\Async.Site\bin\System.Web.WebPages.Razor.xml
 C:\github\Async\Async.Site\bin\Newtonsoft.Json.xml
 C:\github\Async\Async.Site\bin\ru-ru\BundleTransformer.Core.resources.dll
 C:\github\Async\Async.Site\obj\Debug\Async.Site.csprojResolveAssemblyReference.cache
-C:\github\Async\Async.Site\obj\Debug\Mvc4.dll
-C:\github\Async\Async.Site\obj\Debug\Mvc4.pdb
+C:\github\Async\Async.Site\bin\Async.dll.config
+C:\github\Async\Async.Site\bin\Async.dll
+C:\github\Async\Async.Site\bin\Async.pdb
+C:\github\Async\Async.Site\obj\Debug\Async.dll
+C:\github\Async\Async.Site\obj\Debug\Async.pdb
