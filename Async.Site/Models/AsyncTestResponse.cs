@@ -7,7 +7,6 @@ namespace Async.Models
 {
     public class AsyncTestResponse
     {
-        public int MillSeconds { get; set; }
         public double Seconds { get; set; }
     }
 }
