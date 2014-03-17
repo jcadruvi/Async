@@ -19,7 +19,7 @@ namespace Mvc4.Controllers
         {
             _sleepTimes = new List<int>{
                 1000,
-                2000,
+                3000,
                 1500,
                 750,
                 500
@@ -33,15 +33,13 @@ namespace Mvc4.Controllers
             AsyncTestResponse response = new AsyncTestResponse();
             DateTime startDate = DateTime.Now;
 
-            var tasks = new[]
-            {
-                Task.Run(() =>Sleep(2000)), 
-                Task.Run(() =>Sleep(1000)), 
-                Task.Run(() =>Sleep(1500))
-            };
+            //var tasks = (from t in _sleepTimes
+            //             select Task.Run(() =>Sleep(t)));
 
-            // Asynchronously wait for them all to complete.
-            await Task.WhenAll(tasks);
+            //// Asynchronously wait for them all to complete.
+            //await Task.WhenAll(tasks);
+
+            await _service.DoWork();
            
             DateTime endDate = DateTime.Now;
             TimeSpan span = (endDate - startDate);
@@ -49,21 +47,6 @@ namespace Mvc4.Controllers
             
             return response;
         }
-
-        //private void RunTasks()
-        //{
-        //    Task<bool>[] tasks = (from t in _sleepTimes
-        //                          select Sleep(t)).ToArray();
-        //    Task.WaitAll(tasks);
-        //    //var task = Sleep(1000);
-        //    //task.Wait();
-        //}
-
-        //private async Task<bool> Sleep(int sleepTime)
-        //{
-        //    await Task.Delay(sleepTime);
-        //    return true;
-        //}
 
         private void Sleep(int sleepTime)
         {
